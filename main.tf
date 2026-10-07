@@ -126,3 +126,10 @@ module "ec2_instances" {
     environment = "development"
   }
 }
+
+module "s3-bucket-hw" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-hw/aws"
+  version = "1.0.0"
+  bucket_name = "s3-bucket-hw-10-07-2026"
+  # insert required variables here
+}
