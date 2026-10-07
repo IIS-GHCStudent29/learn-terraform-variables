@@ -3,7 +3,7 @@ output "public_dns_name" {
   value       = module.elb_http.this_elb_dns_name
 }
 
-output "s3_bucket_name" {
+output "s3_bucket_name_hw" {
   description = "Name of the S3 bucket for this project"
-  value       = module.s3-bucket-hw.name
+  value       = module.s3-bucket-hw.this_s3_bucket_name
 }
