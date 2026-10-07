@@ -5,5 +5,5 @@ output "public_dns_name" {
 
 output "s3_bucket_nam_hw" {
   description = "Name of the S3 bucket for this project"
-  value       = module.s3-bucket-hw.this_s3_bucket_name
+  value       = module.s3-bucket-hw.id
 }
